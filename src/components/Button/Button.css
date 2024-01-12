@@ -1,0 +1,14 @@
+.Button {
+    min-width: 420px;
+    height: 35px;
+    border: none;
+    background-color: transparent;
+    font-size: 35px;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+.Button:hover {
+    color: blueviolet;
+}
