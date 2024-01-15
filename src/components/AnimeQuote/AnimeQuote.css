@@ -1,0 +1,25 @@
+.anime{
+    grid-column: 2/3;
+    grid-row:1/2;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    margin: 0;
+    padding: 40px;
+}
+
+.anime__title {
+    margin: 0;
+    font-weight: 600;
+}
+
+.anime__quote {
+    margin: 0;
+    max-height: 300px;
+    text-overflow: ellipsis;
+}
+
+.anime__character {
+    margin:0;
+    text-align: right;
+}

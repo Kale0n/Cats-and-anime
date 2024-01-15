@@ -1,7 +1,7 @@
 import { getCat, getAnimeQuote } from "../../API/API"
 import {useDispatch} from 'react-redux'
 import { setCatUrl }from '../../store/catUrl.js'
-import { setAnime } from "../../store/anime.js"
+import { setAnimeData } from "../../store/anime.js"
  import './Button.css'
 
 export default function Button () {
@@ -14,7 +14,7 @@ export default function Button () {
         .catch(err =>  console.log(err))
 
         getAnimeQuote()
-        .then(data => dispatch(setAnime({ 
+        .then(data => dispatch(setAnimeData({ 
             title: data.anime,
             character: data.character,
             quote: data.quote
@@ -24,7 +24,7 @@ export default function Button () {
 
     return (
         <>
-            <button className='Button' onClick={handleButtonClick}>Click for your cat and animequote</button>
+            <button className='Button' onClick={handleButtonClick}>Click here for your cat and animequote</button>
         </>
     )
 }

@@ -1,12 +1,12 @@
 import { useSelector } from "react-redux"
+import "./AnimeQuote.css"
 
 export default function AnimeQuote () {
     const anime = useSelector(state => state.anime.data)
     return (
-        <div>
-            <h3>{anime.title}</h3>
-            <p>{anime.character}</p>
-            <blockquote>{anime.quote}</blockquote>
+        <div className="anime">
+            <blockquote className="anime__quote">"{anime.quote}"</blockquote>
+            <p className="anime__character">{anime.character} | {anime.title}</p>
         </div>
     )
 }
