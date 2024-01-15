@@ -1,0 +1,7 @@
+.cat {
+    grid-column: 1/2;
+    grid-row:1/2;
+    margin: 0 auto;
+    border-radius: 9%;
+    object-fit: contain;
+}

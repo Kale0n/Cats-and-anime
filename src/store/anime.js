@@ -4,17 +4,17 @@ const animeSlice = createSlice({
     name: "anime",
     initialState: {
         data :{
-            title:'',
-            character:'',
-            quote:''
+            title:'Attack on Titan',
+            character:'Hannes',
+            quote:"You couldn’t save your mom because you… weren’t strong enough. I didn’t face the Titan… because I wasn’t brave enough."
         }
     },
     reducers: {
-        setAnimeData: (state,action) => { //вот здесь пока не очень понятно. 
+        setAnimeData: (state,action) => { 
             state.data = action.payload
         }
     }
 })
 
-export const {setAnime} = animeSlice.actions
+export const {setAnimeData} = animeSlice.actions
 export default animeSlice.reducer

@@ -6,11 +6,11 @@ import Button from './components/Button/Button'
 
 function App() {
   return (
-    <>
+    <main className='App'>
       <CatContainer/>
       <AnimeQuote/>
       <Button/>
-    </>
+    </main>
   );
 }
 
